@@ -1,0 +1,109 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #000000;
+}
+
+.white-text{
+  color:white;
+}
+#body{
+
+  background: -webkit-linear-gradient(270deg, #352baa 0%, #008080 100%) fixed !important;
+  height: 100%;
+  margin:0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+p {
+  line-height: 2rem;
+}
+
+.lazer{
+  font-family:'Lazer84' !important;
+}
+.button-collapse {
+  color: #ec407a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+body{
+  background-color:#FF6AD5;
+}
+
+a{
+  text-decoration: none;
+}
+
+.q {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em;
+}
+
+.faq-container {
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#sponlogo:hover{
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
