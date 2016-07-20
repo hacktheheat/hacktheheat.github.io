@@ -1,19 +1,19 @@
 
   function initialize() {
         var mapOptions = {
-          zoom: 18,
+          zoom: 16,
           draggable: false,
           scrollwheel:false,
           navigationControl: false,
           mapTypeControl: false,
           scaleControl: false,
-          center: new google.maps.LatLng(44.9883707, -93.2772887),
+          center: new google.maps.LatLng(44.902764, -93.563524),
           mapTypeId: google.maps.MapTypeId.ROAD
         };
         map = new google.maps.Map(document.getElementById('map'),
             mapOptions);
         map.data.loadGeoJson('../assets/map.geojson');
-        new google.maps.Marker({map:map,position:map.getCenter(),label:"Power Objects"})
+        new google.maps.Marker({map:map,position:map.getCenter(),label:"Excelsior Commons"})
         
         
 
