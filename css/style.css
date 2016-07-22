@@ -27,6 +27,12 @@ p {
   line-height: 2rem;
 }
 
+#hthlogo{
+  height:10px;
+  width:10px;
+  position:left;
+}
+
 .lazer{
   font-family:'Lazer84' !important;
 }
