@@ -131,8 +131,3 @@ a{
   filter: alpha(opacity=30);
 }
 
-@media screen and (max-width: 768px) {
-body {
-    min-height: 1240px;
-}
-}

@@ -1,3 +1,7 @@
+window.onerror = function(error) {
+    alert(error);
+};
+
 (function($){
   $(function(){
 
