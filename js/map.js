@@ -1,3 +1,6 @@
+window.onerror = function(error) {
+    alert(error);
+};
 
   function initialize() {
         var mapOptions = {
