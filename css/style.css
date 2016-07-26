@@ -103,6 +103,22 @@ a{
   margin: 1em;
 }
 
+#jcard{
+  
+}
+
+.j {
+  height: 210px;
+  width: 400px;
+  display: inline-block;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  margin: 1em;
+}
+
 .b {
   height: 150px;
   width: 400px;
