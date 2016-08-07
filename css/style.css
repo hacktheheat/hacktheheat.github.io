@@ -16,7 +16,7 @@ nav .brand-logo {
 }
 #body{
 
-  background: -webkit-linear-gradient(270deg, #352baa 0%, #008080 100%) fixed !important;
+  background: #FFFFFF fixed !important;
   height: 100%;
   margin:0;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: #FFFFFF;
 }
   .parallax-container .section {
     width: 100%;
@@ -72,7 +72,7 @@ footer.page-footer {
 }
 
 body{
-  background-color:#FF6AD5;
+  background-color:#FFFFFF;
 }
 
 a{
@@ -84,7 +84,8 @@ a{
   width: 300px;
   display: inline-block;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.2);
+  color:black;
+  background-color: #FFFFFF;
   border-radius: 6px;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
   padding: 1em;
@@ -112,7 +113,7 @@ a{
   width: 400px;
   display: inline-block;
   text-align: left;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color:  #FFFFFF;
   border-radius: 6px;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
   padding: 1em;

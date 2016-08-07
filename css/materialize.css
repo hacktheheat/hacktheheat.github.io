@@ -2975,7 +2975,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #ff5c33;
 }
 
 footer.page-footer .footer-copyright {
@@ -3114,11 +3114,11 @@ td, th {
 }
 
 .collection .collection-item {
-  background-color: #557ea0;
+  background-color: black;
   line-height: 1.5rem;
   padding: 10px 20px;
   margin: 0;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ff5c33;
 }
 
 .collection .collection-item.avatar {
@@ -3157,7 +3157,7 @@ td, th {
   position: absolute;
   top: 16px;
   right: 16px;
-  color:white;
+  color:black;
 }
 
 .collection .collection-item:last-child {
@@ -4546,7 +4546,7 @@ small {
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #557ea0;
+  background-color: #ff5c33;
   transition: box-shadow .25s;
   border-radius: 2px;
 }
