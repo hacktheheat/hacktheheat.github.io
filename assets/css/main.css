@@ -2028,11 +2028,18 @@
 		background-repeat: no-repeat;
 	}
 
-	@media only screen and (max-width : 769px) {
+	@media only screen and (max-width : 1250px) {
   		#header-wrapper{
-  			background-size: 1000px 600px !important;
+  			background-size: 1200px 700px !important;
   		}
 	}
+
+	@media only screen and (max-width : 1440px) {
+  		#header-wrapper{
+  			background-size: 1440px 700px !important;
+  		}
+	}
+
 	.homepage #header-wrapper {
 		padding: 10em 0 6em 0;
 		background-size: 128px 128px, 100% 100%, auto;
