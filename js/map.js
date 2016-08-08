@@ -15,7 +15,6 @@ window.onerror = function(error) {
         };
         map = new google.maps.Map(document.getElementById('map'),
             mapOptions);
-        map.data.loadGeoJson('../assets/map.geojson');
         new google.maps.Marker({map:map,position:map.getCenter(),label:"Excelsior Commons"})
         
         

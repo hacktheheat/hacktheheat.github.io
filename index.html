@@ -1,356 +1,290 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- made by www.metatags.org -->
+		<meta name="description" content="At Hack the Heat, students of all skill levels get together for 24 hours to code and build the app, game of gadget of their dreams!" />
+		<meta name="keywords" content="Hackathon, Minnesota, High, School, Coding, Programming, Twin, Cities, Summer, Science, STEM, Technology, Games, Apps, Computer, Electronics, 24, hour, Minneapolis, Excelsior" />
+		<meta name="author" content="metatags generator">
+		<meta name="robots" content="index, follow">
+		<meta name="revisit-after" content="3 days">
+		<title>Hack the Heat</title>
+    <!-- Hack, the, Heat -->
 
-<!-- made by www.metatags.org -->
-  <meta name="description" content="At Hack the Heat, students of all skill levels get together for 24 hours to code and build the app, game of gadget of their dreams!" />
-  <meta name="keywords" content="Hackathon, Minnesota, High, School, Coding, Programming, Twin, Cities, Summer, Science, STEM, Technology, Games, Apps, Computer, Electronics, 24, hour, Minneapolis, Excelsior" />
-  <meta name="author" content="metatags generator">
-  <meta name="robots" content="index, follow">
-  <meta name="revisit-after" content="3 days">
-  <title>Hack the Heat</title>
-<!-- Hack, the, Heat -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  		<style>
+       #map {
+        width: 100%;
+        height: 400px;
+      	}
+   		</style>
+  		<!--<link href="css/map.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+  		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<script src="https://use.fontawesome.com/32f50d9df6.js"></script>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
 
-  <!-- CSS  -->
-  <script src="https://use.fontawesome.com/32f50d9df6.js"></script>
-  <script type="text/javascript" src="js/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrzmHdjqG_uLD199Vw7ZVBSGTyGxYxa1Y&callback=initialize"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/map.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-</head>
-<!--#9B70E4-- #db5790---background: linear-gradient(#FF6AD5, #8795E8)-->
-<body id="body"style=" background-rep">
-  
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container" id="hth-title">
-        <br><br>
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
 
+						<!-- Logo -->
+							<!--<h1 id="logo"><a href="index.html">Hack the Heat</a></h1>-->
 
-        <!--<center><span id="soc-media" align="right"
-        <a target="_blank" title="Instagram" href="http://www.instagram.com/hacktheheat"><img alt="Instagram" src="images/insta.png"></a>
-      <a target="_blank" title="Twitter" href="http://www.twitter.com/hacktheheat"><img alt="Twitter" src="images/twitter.png"></a>
-      <a target="_blank" title="Facebook" href="http://www.facebook.com/hacktheheat/?fref=ts"><img alt="Facebook" src="images/facebook.png"></a>
-      <img src="images/android-icon-36x36.png">
-    </span></center>-->
+						
 
-        <h1 id="hth-header" class="header center text-lighten-2 lazer" style="color:#6bdfff">&lt;Hack&nbsp; the&nbsp; Heat/&gt;</h1>
-        <div class="row center">
-          <h5 class="header col s12 light hth-subtitle" style="margin-top:-23px">A Student-led Hackathon on August 20th-21st, 2016</h5>
-          <h5 class="header col s12 light hth-subtitle" style="padding-bottom:20px">Meet new people, enhance your skills, and immerse yourself in the world of computers and technology.</h5>
-        </div>
-        <div class="row center">
-          <a href="https://luke189.typeform.com/to/yB6Kft" id="download-button" class="btn-large waves-effect waves-light pink lighten-1" style="margin-top:-12px; background-color: #5883a7
- !important">Sign Me Up!</a>
-        </div>
-        <br><br>
+					</div>
 
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.png" alt="Unsplashed background img 1"></div>
-  </div>
+					<!-- Hero -->
+						<section id="hero" class="container">
+							<header>
+								<h2 style="font-family:Lazer84; padding-top:115px;">Hack the Heat</h2>
+							</header>
+							<p>
+                August 20-21
+							<br>
+							Meet new people, enhance your skills, and immerse yourself in the world of computers and technology.</p>
+							<ul class="actions">
+								<li><a href="https://luke189.typeform.com/to/yB6Kft" class="button">Sign me up!</a></li>
+							</ul>
+						</section>
 
+				</div>
 
-<!--  <div class="container">
-    <div class="section">
+			<div class="wrapper">
+					<section class="container">
+						<header class="major">
+							
+							<h2>About</h2>
+							<p>Hack the Heat is a hackathon created by and for high school students in the Twin Cities metro area. From August 20th to 21st 2016, noon to noon, beginner and advanced participants alike will arrive and stay for 24 hours, working away to create something remarkable. Whether you've never written a line of code or you're a published app developer, Hack the Heat has something to offer for everybody.</p>
+						</header>
 
-      <!--   Icon Section   --><!--
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="fa fa-question" style="color:#6bfffa" aria-hidden="true"></i></h2>
-            <h5 class="center">What is Hack the Heat?</h5>
-            <p class="center light white-text">Hack the Heat is a 24 hour student-run summer hackathon, aimed at giving high-school students an opportunity to collaborate, design, and build awesome apps and gadgets, all for the chance to win excellent prizes! </p>
-          </div>
-        </div>
+            <ul class="actions major">
+              <li><a href="http://www.thecommonswp.com/" class="button">Hosted at The Commons - An Unexpected Workplace in Excelsior, MN</a></li>
+            </ul>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
+					    <div id="map"></div>
+					    <script>
+					      function initMap() {
+					        var mapOptions = {
+					          zoom: 16,
+					          draggable: false,
+					          scrollwheel:false,
+					          navigationControl: false,
+					          mapTypeControl: false,
+					          scaleControl: false,
+					          center: new google.maps.LatLng(44.902764, -93.563524),
+					          mapTypeId: google.maps.MapTypeId.ROAD
+					        };
+					        map = new google.maps.Map(document.getElementById('map'),
+					            mapOptions);
+					        new google.maps.Marker({map:map,position:map.getCenter(),label:"Excelsior Commons"})
+					        google.maps.event.addListener(map, 'center_changed', function() {
+    
+						    //a value to determine whether the map has been resized
+						    var size=[this.getDiv().offsetWidth,this.getDiv().offsetHeight].join('x');
+						    
+						    //when the center has changed, but not the size of the map
+						    if(!this.get('size') || size===this.get('size')){
+						       console.log('ccc');
+						       this.setValues({size:size,_center:this.getCenter()});   
+						       google.maps.event.trigger(map, "resize");      
+						    }
+						    //when the map has been resized
+						    else{
+						      google.maps.event.addListenerOnce(this,'idle',function(){console.log('rrr');
+						      this.setValues({size:size,center:this.get('_center')});});      
+						    }
+						  });
+						  //trigger the resize-event to initialize the size and _center-values
+						  google.maps.event.trigger(map,'center_changed',{});
 
-            <a href="#map"><h2 class="center black-text"><i class="material-icons" style="color:#6bfffa">today</i></h2>
-            <h5 class="center">Schedule</h5>
-            <p class="center light white-text">Arrive, plan, design, build, present! <br> Click here to check out our agenda.</p></a>
-          </div>
-        </div>
+					      }
+					    </script>
+					    <script async defer
+					        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJw-2RrJ5nUYqieeOlNB3LmH9tw9f6e0Q&callback=initMap">
+					    </script>
+						<center><p>540 Lake St, Excelsior, MN 55331</p></center>
+						<header class="major">
+							
+							<h2 style="padding-top:70px">FAQ</h2>
+						</header>
+						<div class="row features">
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>What is a hackathon?</b></h4>
+								<p>Hackathons are events where people come together to collaborate and create software or hardware.</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>Does it cost anything to attend?</b></h4>
+								<p>Admission is $10. This covers everything from merch to food. We also encourage attendees to bring in clothing donations for Metastatic Breast Cancer research.</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>What makes this hackathon different?</b></h4>
+								<p>Unlike most hackathons, our event is open to high schoolers of all skill levels, and while friendly competition will be present, growing in skill should be the primary aim for all of our attendees.</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>How long will the event last?</b></h4>
+								<p>Hack the Heat will run for 24 hours, from noon to noon. Overnight parking will be available. Adult chaperones will be in attendance at all times.</p>
+							</section>
+							
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>What's the age limit to attend?</b></h4>
+								<p>If you are at or between the ages of 12 through 18 years old, which could include incoming college freshmen, you are welcome to attend. If you have any questions or concerns over this policy, email us at hacktheheat@gmail.com.</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>What should I bring?</b></h4>
+								<p>Bring your computer and a mouse. If you plan on sleeping, bring a sleeping bag, pillow, and toothbrush. Desktop PCs and monitors in addition to laptops are allowed. Food and drink will be provided. If you have a food allergy, you are advised to bring your own snacks.</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>I don't know how to code! Should I still come?</b></h4>
+								<p>Definitely! This will be the perfect place to learn. Here at Hack the Heat there will be multiple workshops and tutorials for those of all skill levels, especially those who don't know how to code.</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>Is this similar to CodeDay?</b></h4>
+								<p>Yes! Like CodeDay, Hack the Heat is open to high school students of all skill levels, regardless of prior knowledge. Unlike CodeDay however, we'll be providing access to Amazon Echos, electronics kits, Arduinos, and other fun stuff if you feel like making something even more unique!</p>
+							</section>
+							<section class="4u 12u(narrower) feature">
+								
+								<h4><b>Where will I sleep?</b></h4>
+								<p>Those who plan to sleep can do so anywhere throughout the venue. Make sure to bring a sleeping bag and pillow.</p>
+							</section>
+						</div>
+					
+					</section>
+				</div>
 
-        <a href="#faq">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center black-text"><i class="material-icons" style="color:#6bfffa">question_answer</i></h2>
-            <h5 class="center">FAQ</h5>
-            <p class="center light white-text">Yes, there will be WiFi. <br> Click here for some more thought-provoking answers.</p>
-          </div>
-        </div></a>
-      </div>
+			
+			<!-- Features 1 -->
+				<div class="wrapper">
+					<div class="container">
+						<header class="major">
+							<h2>Sponsors</h2>
+							<p>Thanks to our generous sponsors for making this event possible!</p>
+						</header>
+						<div class="row">
+							<section class="6u 12u(narrower) feature">
+								<div class="image-wrapper">
+									<center><a href="http://www.spscommerce.com" class="image featured first"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/sps.svg"></a></center>
+								</div>
+								
+							</section>
+							<section class="6u 12u(narrower) feature">
+								<div class="image-wrapper">
+									<center><a href="http://www.thecommonswp.com" class="image featured"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/commons2.svg"></a></center>
+								</div>
+							</section>
+							<section class="6u 12u(narrower) feature">
+								<div class="image-wrapper">
+									<center><a href="http://www.rocketmandigital.com" class="image featured"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/rocketman-fix.svg"></a></center>
+								</div>
+							</section>
+							<section class="6u 12u(narrower) feature">
+								<div class="image-wrapper">
+									<center><a href="http://www.starkeyhearingfoundation.org" class="image featured"><img style="width:70%; height: 10em;padding-top:-5em;" src="images/starkey2.png"></a></center>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
 
-    </div>
-  </div>-->
+			
+			
 
-
-  
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h2><i class="fa fa-question" style="color:white" aria-hidden="true"></i></h2>
-          <h4 class="white-text">About &nbsp;the&nbsp; Event</h4>
-          <p class="left-align light white-text">Hack the Heat is a Hackathon created by and for high school students in the Twin Cities metro area. From August 20th to 21st 2016, noon to noon, beginner and advanced participants alike will arrive and stay for 24 hours, working away to create something remarkable. Whether you've never written a line of code or you're a published app developer, Hack the Heat has something to offer for everybody.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Ready to Hack the Heat?</h5>
-        </div>
-        <div class="row center">
-          <a href="https://luke189.typeform.com/to/yB6Kft" id="download-button" class="btn-large waves-effect waves-light pink lighten-1" style="margin-top:-12px; background-color: #5883a7
- !important">Sign Me Up!</a>
-        </div>
-      </div>
-    </div>
-    <div id="where" class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-
-
-  <div class="container white-text">
-    <div class="card center">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Where is it?</h4>
-          <p id="schedule" class="center-align light" style="padding-bottom:0px">Hack the Heat 2016 will be hosted at <a href="http://www.thecommonswp.com/">The Commons - An Uncommon Workplace</a> in Excelsior, MN. <br> 540 Lake St, Excelsior, MN 55331</p>
-            <!--<div class="j"><center><a id="sponlogo" href="http://www.facebook.com/Team-Judy-Fund-for-Metastatic-Breast-Cancer-Research-215378048495085/">
-              <img style="width:20%; height:20%" src="images/teamjudy.png" align="right"></a><p align="left"class="light" style="word-wrap:break-word;">When you come to the event, bring in spare clothing for metastatic breast cancer research at the University of Minnesota! All funds are donated through Team Judy. To learn about Judy's story and her organization, click here.</p>
-              </center>
-            </div>-->
-
-            <!--<center><div class="col s12 m4 center">
-              
-              <div id="jcard" class="card horizontal center-align">
-                  
-                <div class="card-stacked">
-                  <div class="card-content">
-                    <p align="left">When you come to the event, bring in spare clothing for metastatic breast cancer research at the University of Minnesota! All funds are donated through Team Judy. To learn about Judy's story and her organization, click here.</p>
-                  </div>
-                  <div class="card-image">
-                    <img align="right" style="height:40px"src="images/teamjudy.png">
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>Contact Us</h2>
+							
+						</header>
+						<div class="row">
+							
+							<section class="4u 12u(narrower)"><a href="http://www.facebook.com/hacktheheat">
+								<div class="row 0%">
+									<ul class="divided icons 4u 4u(mobile)">
+										<li class="icon fa-facebook"></li>
+										
+									</ul>
+								
+								</div>
+							</section></a>
+              <section class="4u 12u(narrower)"><a href="http://www.twitter.com/hacktheheat">
+                <div class="row 0%">
+                  <ul class="divided icons 4u 4u(mobile)">
+                    
+                    <li class="icon fa-twitter"></li>
+                    
+                  </ul>
+                
                 </div>
-              </div>
-            </div></center>-->
+              </section></a>
+              <section class="4u 12u(narrower)"><a href="http://www.instagram.com/hacktheheat">
+                <div class="row 0%">
+                  <ul class="divided icons 4u 4u(mobile)">
+                    
+                    <li class="icon fa-instagram"></li>
+                  </ul>
+                
+                </div>
+              </section></a>
 
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>&copy; Hack the Heat. All rights reserved.</li><li>Created and Designed by Luke Igel and William Walcher <br>Artwork courtesy <a href="http://lizwalcher.weebly.com">Liz Walcher</a></li>
+              <br><br>
+              Created with HTML5 UP
+						</ul>
+					</div>
+				</div>
 
+		</div>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <div id="map"></div>
+		<!-- Scripts -->
 
-  <div class="container white-text">
-    <div class="card">
-    <div class="section">
-    <div class="row">
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-
-        <div class="col s12 center">
-          <div class="card" style="padding-top:1em">
-            <h2 class="center black-text"><i class="material-icons" style="color:#FFFFFF">question_answer</i></h2>
-            <h4 style="text-align: center">FAQ</h4>
-            <div class="faq-container">
-              <div class="q"><h6><strong>Q: What is a "hackathon"?</strong></h6><p>Hackathons are events where people come together to collaborate and create software or hardware.</p></div>
-              <div class="q"><h6><strong>Q: Does it cost anything to attend?</strong></h6><p>Admission is $10. This covers everything from merch to food. We also encourage attendees to bring in clothing donations for Metastatic Breast Cancer research.</p></div>
-              <div class="q"><h6><strong>Q: What makes this hackathon different?</strong></h6><p>Unlike most hackathons, our event is open to high schoolers of all skill levels, and while friendly competition will be present, growing in skill should be the primary aim for all of our attendees.</p></div>
-              <div class="q"><h6><strong>Q: What should I bring?</strong></h6><p>Bring your computer and a mouse. If you plan on sleeping, bring a sleeping bag, pillow, and toothbrush. Desktop PCs and monitors in addition to laptops are allowed. Food and drink will be provided. If you have a food allergy, you are advised to bring your own snacks.</p></div>
-              <div class="q"><h6><strong>Q: How long will the event last?</strong></h6><p>Hack the Heat will run for 24 hours, from noon to noon. Overnight parking will be available. Adult chaperones will be in attendance at all times.</p></div>
-              <div class="q"><h6><strong>Q: Where will I sleep?</strong></h6><p>Those who plan to sleep can do so anywhere throughout the venue. Make sure to bring a sleeping bag and pillow.</p></div>
-              <div class="q"><h6><strong>Q: I don't know how to code! Should I still come?</strong></h6><p>Definitely! Here at Hack the Heat there will be multiple workshops and tutorials for those of all skill levels, especially those who don't know how to code.</p></div>
-              <div class="q"><h6><strong>Q: Is this similar to CodeDay?</strong></h6><p>Yes! Like CodeDay, Hack the Heat is open to high school students of all skill levels, regardless of prior knowledge. Unlike CodeDay however, we'll be providing electronics kits, Arduinos, and other fun stuff if you feel like making something in the physical world!</p></div>
-              <div class="q"><h6><strong>Q: What's the age limit to attend?</strong></h6><p>If you are at or between the ages of 12 through 18 years old, which could include incoming college freshmen, you are welcome to attend. If you have any questions or concerns over this policy, email us at hacktheheat@gmail.com.</p></div>
-            </div>
-          </div>
-
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <i class="material-icons" style="color:#FFFFFF">today</i>
-          <br>
-          <span class="card-title"><h4>Schedule</h4></span>
-          <div class="card-content">
-
-          <div class="row">
-          <table>
-
-        <thead class="col s6">
-          <tr>
-              <th data-field="id">Saturday</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>12 PM - Arrive and check in; get cool swag! Meet new people and talk about possible projects.</td>
-          </tr>
-          <tr>
-            <td>1 PM - Opening ceremony: Brief presentations from our sponsors and team formation session.</td>
-          </tr>
-          <tr>
-            <td>1:30 PM - Begin hacking!</td>
-          </tr>
-          <tr>
-            <td>3:30 PM - Snack break!</td>
-          </tr>
-          <tr>
-            <td>6 PM - Dinner break!</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <table>
-        <thead class="col s6">
-          <tr>
-              <th data-field="name">Sunday</th>
-
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>12 AM - Midnight snack/Q&A with a professional software developer! (Details TBA!)</td>
-
-          </tr>
-          <tr>
-            <td>7 AM - Breakfast</td>
-
-          </tr>
-          <tr>
-            <td>9 AM - Judges arrive; Devpost opens</td>
-
-          </tr>
-          <tr>
-            <td>11 AM - Hacks must be submitted to Devpost by this time!</td>
-
-          </tr>
-          <tr>
-            <td id="faq">12 PM - Closing ceremony/prizes!</td>
-
-          </tr>
-        </tbody>
-      </table>
-        </div>
-      </div>
-    </div>
-        </div>
-      </div>
-  </div>
-
-  
-
-  <div class="card">
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 id="sponsors" style="padding-top:20px">Sponsors</h4>
-          <div class="card-content">
-          <p class="center-align light">Thanks to our generous sponsors for making this event possible!</p>
-          <div class="faq-container">
-            <div class="b"><center><a id="sponlogo" href="http://www.spscommerce.com"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/sps.svg"></a></center></div>
-            <div class="s"><center><a id="sponlogo" href="http://www.thecommonswp.com"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/commons.svg"></a></center></div>
-            <!--<div class="s"><a id="sponlogo" href="http://www.powerobjects.com"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/powerobjects.svg"></a></div>-->
-            <div class="s"><center><a id="sponlogo" href="http://www.rocketmandigital.com"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/rocketman-fix.svg"></a></center></div>
-            <div class="s"><center><a id="sponlogo" href="http://www.starkeyhearingfoundation.org"><img style="width:90%; height: 9em;padding-top:-5em;" src="images/starkey2.png"></a></center></div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-
-  <footer id="creators" style="background: #354f64 !important;"class="page-footer teal z-depth-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Who We Are</h5>
-          <p class="grey-text text-lighten-4" >We are two high school students with a passion for everything computers. To find out more about us, check out the following links.</p>
-
-
-        </div>
-      <ul class="collection z-depth-2">
-    <li class="collection-item avatar">
-      <img src="images/will.jpg" alt="" class="circle">
-      <span class="title"><strong>William Walcher</strong></span>
-      <p>Senior at Providence Academy<br>
-
-      </p>
-      <a target="_blank" href="http://github.com/wjwalcher" class="secondary-content"><i style="margin-right:20px" class="fa fa-github" aria-hidden="true" style="color:#FFFFFF"></i></a>
-      <a target="_blank" href="http://www.linkedin.com/in/williamwalcher" class="secondary-content"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:#FFFFFF"></i></a>
-    </li>
-    <li class="collection-item avatar">
-      <img src="images/luke.jpg" alt="" class="circle">
-      <span class="title"><strong>Luke Igel</strong></span>
-      <p>Junior at Providence Academy<br>
-
-      </p>
-       <a target="_blank" href="http://github.com/dukeeagle" class="secondary-content"><i style="margin-right:20px" class="fa fa-github" aria-hidden="true" style="color:#FFFFFF"></i></a>
-      <a target="_blank" href="http://www.linkedin.com/in/lucas-igel-01803a117" class="secondary-content"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:#FFFFFF"></i></a>
-    </li>
-  </ul>
-    </div>
-    <div class="footer-copyright">
-      <center><div class="container">
-      Website Created and Designed with <i class="fa fa-heart" aria-hidden="true"></i> by William Walcher and Luke Igel
-      <br>
-      Artwork courtesy of <a href="http://lizwalcher.weebly.com">Liz Walcher</a>
-      <br>
-      <a target="_blank" title="Instagram" href="http://www.instagram.com/hacktheheat"><img alt="Instagram" src="images/insta.png"></a>
-      <a target="_blank" title="Twitter" href="http://www.twitter.com/hacktheheat"><img alt="Twitter" src="images/twitter.png"></a>
-      <a target="_blank" title="Facebook" href="http://www.facebook.com/hacktheheat/?fref=ts"><img alt="Facebook" src="images/facebook.png"></a>
-      </div></center>
-    </div>
-  </footer>
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+	</body>
 </html>
