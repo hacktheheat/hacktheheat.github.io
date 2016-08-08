@@ -2028,7 +2028,7 @@
 		background-repeat: no-repeat;
 	}
 
-	@media only screen and (max-width : 766px) {
+	@media only screen and (max-width : 769px) {
   		#header-wrapper{
   			background-size: 1000px 600px !important;
   		}
