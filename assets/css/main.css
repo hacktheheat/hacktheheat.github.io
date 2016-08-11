@@ -2234,6 +2234,8 @@
 			border-color: rgba(255, 255, 255, 0);
 			color: #f08c89;
 			font-size: 1.25em;
+			height:5em;
+			line-height:3em;
 		}
 
 			#hero .button:hover {
