@@ -29,7 +29,7 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
 		display: block;
 	}
 
@@ -2094,7 +2094,7 @@
 			text-transform: uppercase;
 		}
 
-	#nav {
+	/*#nav {
 		text-align: center;
 		position: absolute;
 		top: 0;
@@ -2144,7 +2144,7 @@
 
 				#nav > ul > li.break {
 					margin-left: 20em;
-				}
+				}*/
 
 	.dropotron {
 		text-align: left;
