@@ -12,7 +12,22 @@
 /* ----------------------------------------------------------------------------
 	Header
 ---------------------------------------------------------------------------- */
+.montserrat {
 
+	font-family: 'Montserrat' !important;
+
+}
+
+.montserratalt {
+	font-family: 'MontserratAlternatives' !important;
+}
+
+.montserratlight {
+	font-family: 'Montserrat-Light' !important;
+}
+.montserratbold {
+	font-family: 'Montserrat-ExtraBold' !important;
+}
 #header { border-bottom: 0; }
 
 #header #header-wrap {
@@ -707,4 +722,3 @@ textarea.border-form-control {
 	.overlay-menu #primary-menu.dark ul { background-color: transparent; }
 
 }
-

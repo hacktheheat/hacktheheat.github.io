@@ -52,6 +52,16 @@
 }
 
 @font-face{
+  font-family: "Montserrat-Light";
+  src: url("fonts/Montserrat-Light.otf");
+}
+
+@font-face{
+  font-family: "Montserrat-ExtraBold";
+  src: url("fonts/Montserrat-ExtraBold.otf");
+}
+
+@font-face{
   font-family: "MontserratAlternatives";
   src: url("fonts/MontserratAlternates-Regular.otf");
 }
